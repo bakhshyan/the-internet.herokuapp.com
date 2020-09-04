@@ -7,6 +7,7 @@ import pages.DropDownPage;
 
 public class DropDownTest extends BaseTest {
 
+
     @Test
     public void testSelectOption() {
 
