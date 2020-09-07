@@ -30,6 +30,15 @@ public class HomePage {
         return new HoversPage(driver);
     }
 
+    public KeyPressesPage clickKeyPressesPage() {
+        clickLink("Key Presses");
+        return new  KeyPressesPage(driver);
+    }
+
+    public HorizontalSliderPage clickHorizontalSliderPage() {
+        clickLink("Horizontal Slider");
+        return new HorizontalSliderPage(driver);
+    }
     private void clickLink(String linkText) {
         driver.findElement(By.linkText(linkText)).click();
     }
