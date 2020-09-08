@@ -3,7 +3,6 @@ package dropdown;
 import base.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.DropDownPage;
 
 public class DropDownTest extends BaseTest {
 
@@ -11,7 +10,7 @@ public class DropDownTest extends BaseTest {
     @Test
     public void testSelectOption() {
 
-        var dropdownPage = homePage.clickDropDown();
+        var dropdownPage = homePage.clickDropDownPage();
         String option = "Option 1";
         dropdownPage.selectFromDropDown(option);
         var selectedOptions =dropdownPage.getSelectedOptions();

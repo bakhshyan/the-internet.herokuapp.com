@@ -10,7 +10,7 @@ public class LoginTests extends BaseTest {
 
     @Test
     public void testSuccesfulLogin() {
-        LoginPage loginPage= homePage.clickFormAuthentication();
+        LoginPage loginPage= homePage.clickFormAuthenticationPage();
         loginPage.setUsername("tomsmith");
         loginPage.setPassword("SuperSecretPassword!");
         SecureAreaPage secureAreaPage = loginPage.clickLoginButton();
