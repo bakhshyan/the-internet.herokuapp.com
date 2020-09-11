@@ -5,10 +5,10 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class LargeDeepDOM {
+public class LargeDeepDOMPage {
     private WebDriver driver;
     private By table = By.id("large-table");
-    public LargeDeepDOM(WebDriver driver) {
+    public LargeDeepDOMPage(WebDriver driver) {
         this.driver = driver;
     }
 

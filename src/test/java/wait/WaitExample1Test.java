@@ -4,10 +4,10 @@ import base.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class WaitTests extends BaseTest {
+public class WaitExample1Test extends BaseTest {
 
     @Test
-    public void testWait() {
+    public void testWaitExample1() {
         var dynamicLoadingPage = homePage.clickDynamicLoadingPage().clickExample1();
         dynamicLoadingPage.clickStartButton();
         Assert.assertEquals(dynamicLoadingPage.getLoadedText(), "Hello World!", "The loaded text is incorrect");
