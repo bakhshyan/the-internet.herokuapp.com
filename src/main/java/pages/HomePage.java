@@ -83,6 +83,10 @@ public class HomePage {
         clickLink("Multiple Windows");
         return new MultipleWindowsPage(driver);
     }
+
+    public CookieManager openHomePage() {
+        return new CookieManager(driver);
+    }
     private void clickLink(String linkText) {
         driver.findElement(By.linkText(linkText)).click();
     }
